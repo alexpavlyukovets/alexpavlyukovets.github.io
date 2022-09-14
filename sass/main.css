@@ -175,7 +175,14 @@ h3 {
   text-decoration: none;
   margin: 0 1em;
   font-weight: bold;
-  font-family: "Blinker", sans-serif;
+  font-family: "Fira Code", monospace;
+  transition: all;
+  transition-duration: 0.5s;
+}
+
+.nav-link:hover {
+  transition-duration: 0.5s;
+  color: #64ffda;
 }
 
 .download {
