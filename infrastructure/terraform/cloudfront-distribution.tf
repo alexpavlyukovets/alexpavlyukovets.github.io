@@ -29,8 +29,9 @@ resource "aws_cloudfront_distribution" "portfolio" {
   }
 
   default_cache_behavior {
-    target_origin_id       = local.s3_origin_id
-    viewer_protocol_policy = "redirect-to-https"
+    response_headers_policy_id = "67f7725c-6f97-4210-82d7-5512b31e9d03"
+    target_origin_id           = local.s3_origin_id
+    viewer_protocol_policy     = "redirect-to-https"
 
     allowed_methods = ["GET", "HEAD"]
     cached_methods  = ["GET", "HEAD"]
